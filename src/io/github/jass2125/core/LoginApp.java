@@ -27,9 +27,7 @@ public class LoginApp extends Application {
 		fieldPassword.setLayoutY(50);
 		
 		Button btEntrar = new Button("Entrar");
-		
-		
-		Button btSair = new Button();
+		Button btSair = new Button("Sair");
 		
 		panel.getChildren().addAll(fieldLogin, fieldPassword, btEntrar, btSair);
 		
@@ -39,10 +37,13 @@ public class LoginApp extends Application {
 		
 		fieldLogin.setLayoutX((panel.getWidth() - fieldLogin.getWidth()) / 2);
 		fieldLogin.setLayoutY(50);
+		
 		fieldPassword.setLayoutX((panel.getWidth() - fieldPassword.getWidth()) / 2);
 		fieldPassword.setLayoutY(100);
+		
 		btEntrar.setLayoutX((panel.getWidth() - btEntrar.getWidth()) / 2);
 		btEntrar.setLayoutY(150);
+		
 		btSair.setLayoutX((panel.getWidth() - btSair.getWidth()) / 2);
 		btSair.setLayoutY(200);
 		panel.setStyle("-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, blue 0%, silver 100%);");
